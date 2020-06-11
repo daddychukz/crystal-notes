@@ -6,6 +6,9 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import config from './config';
 import './index.css';
+import { initSentry } from './libs/errorLib';
+
+initSentry();
 
 Amplify.configure({
   Auth: {
